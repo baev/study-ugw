@@ -148,4 +148,6 @@
 
 ### Список литературы
 
+1. Gerard Meszaros xUnit Test Patterns: Refactoring Test Code ISBN-13: 978-0131495050
+2. 
 ### Приложения
