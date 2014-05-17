@@ -55,59 +55,71 @@
 
 #### 1.1.1. Тестирование
 
+##### Разработка через требования (BDD, behavior-driven development)
+Разновидность разработки через тестирование, сфокусированная на тестах в которых четко описаны ожидаемые требования к тестируемой системе. Упор делается на то, что тесты используются как документация работы системы.
+
+##### Фича (feature)
+Часть функциональности развивающейся системы, которая может быть протестирована. 
+
+##### Тест (test)
+Некоторая процедура, котороая может быть выполена вручную или автоматически, и может быть использована для проверки 
+ожидаемых требований к тестируемой системы. Тест часто называют тесткейсом.
+
+##### Тесткейс (test case)
+Обычно синоним для понятия "тест". В xUnit это также может обозначать тестовый класс, как место в которое содержит тестовые методы.
+
+##### Контекст теста (test context, test fixture)
+Все, что нужно тестируемой системе чтобы мы могли ее протестировать.
+Например, RSpec
+calls the test ﬁ xture (as used in xUnit) a “context.” 
+Context: a set fruits with 
+ contents = {apple, orange, pear}
+Exercise: remove orange from the fruits set
+Verify: fruits set contents = {apple, pear}
+In this example, the ﬁ xture consists of a single set and is created directly in the 
+test. How we choose to construct the ﬁ xture has very farreaching ramiﬁcations 
+for all aspects of test writing and maintenance.
+
+##### TDD, test-driven development
+
+##### test error 
+When a test is run, an error that keeps the test from running to completion. The 
+error may be explicitly raised or thrown by the system under test (SUT) or by 
+the test itself, or it may be thrown by the runtime system (e.g., operating system, 
+virtual machine). In general, it is much easier to debug a test error than a test
+failure because the cause of the problem tends to be much more local to where 
+the test error occurs. Compare with test failure and test success.
+
+##### test failure 
+When a test is run and the actual outcome does not match the expected outcome. Compare with test error and test success.
+
+##### test result 
+A test or test suite can be run many times, each time yielding a different test 
+result.
+
+##### test run 
+A test or test suite can be run many times, each time yielding a different test
+result. Some commercial test automation tools record the results of each test run 
+for prosperity.
+
+##### test success 
+A situation in which a test is run and all actual outcomes match the expected 
+outcomes. Compare with test failure and test error.
+
+##### test suite 
+A way to name a collection of tests that we want to run together.
+
+##### user story (or just story)
+The unit of incremental development in eXtreme Programming. We must INVEST 
+in good user stories—that is, each user story must be Independent, Negotiable, 
+Valuable, Estimatable, Small, and Testable [XP123]. A user story corresponds 
+roughly to a “feature” in non-eXtreme Programming terminology and is typically 
+decomposed into one or more tasks to be carried out by project team members.
+
 ##### xUnit 
 Под термином "xUnit" подразумевается любой член семейства инфраструктур автоматизации тестов (Test Automation Framework), применяемых для автоматизации созданных вручную сценариев тестов. Для большинства современных языков программирования существует как минимум одна реализация xUnit. Обычно для автоматизации применяется тот же язык, который использовался для написания тестируемой ситстемы. Хотя это не всегда так, использовать подобную стратегию проще, поскольку тесты легко получают доступ к программному интерфейсу тестируемой системы.
 
 Большинство членов xUnit реализованы с использованием объектно-ориентированной парадигмы.
-
-##### Тест 
-
-Метод изучения глубинных процессов деятельности системы, посредством помещения системы в разные ситуации и отслеживание доступных наблюдению изменений в ней
-
-##### Тестирование программного обеспечения
-
-процесс исследования, испытания программного продукта, имеющий две различные цели:
-
-* продемонстрировать разработчикам и заказчикам, что программа соответствует требованиям;
-* выявить ситуации, в которых поведение программы является неправильным, нежелательным или не соответствующим спецификации.
-
-##### Автоматическое тестирование программного обеспечения
-
-использует программные средства для выполнения тестов и проверки результатов выполнения, что помогает сократить время тестирования и упростить его процесс.
-
-##### Автотесты
-
-автоматические проверки (тесты) использующиеся для автоматического тестирования КЭП
-
-##### Модульное тестирование (Unit testing)
-
-процесс в программировании, позволяющий проверить на корректность отдельные модули исходного кода программы.
-
-##### Продуктовые тесты
-
-процесс в программировании, позволяющий проверить на корректность продукт ???
-
-##### Шаги (steps, степы)
-
-некоторая часть теста. Является логически законченной единицей, но не может быть выделена в отдельный тест. Часто продуктовые тесты разбиваются на шаги для лучшего понимания происходящего
-
-##### Аттачменты
-
-Допольнительные артифакты, возникающие в процессе выполнения тестов, напрмиер, логи, скриншоты, базы данных etc
-
-##### Аспектно ориентированное программирование
-
-##### Аспекты
-
-##### Тест суит
-
-##### Тест кейс
-
-#### 1.1.1. Сокращения
-
-##### XSLT
-
-##### JVM
 
 #### 1.2. Обоснование актуальности
 
