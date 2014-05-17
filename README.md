@@ -70,51 +70,44 @@
 
 ##### Контекст теста (test context, test fixture)
 Все, что нужно тестируемой системе чтобы мы могли ее протестировать.
-Например, RSpec
-calls the test ﬁ xture (as used in xUnit) a “context.” 
-Context: a set fruits with 
- contents = {apple, orange, pear}
-Exercise: remove orange from the fruits set
-Verify: fruits set contents = {apple, pear}
-In this example, the ﬁ xture consists of a single set and is created directly in the 
-test. How we choose to construct the ﬁ xture has very farreaching ramiﬁcations 
-for all aspects of test writing and maintenance.
+Например, наглядно понятно, что такое контекст теста в тестовом фремворке RSpec:
 
-##### TDD, test-driven development
+Контекст: множество фруктов содержащих = {яблоко, апельсин, грушу}
 
-##### test error 
-When a test is run, an error that keeps the test from running to completion. The 
-error may be explicitly raised or thrown by the system under test (SUT) or by 
-the test itself, or it may be thrown by the runtime system (e.g., operating system, 
-virtual machine). In general, it is much easier to debug a test error than a test
-failure because the cause of the problem tends to be much more local to where 
-the test error occurs. Compare with test failure and test success.
+Экспертиза: удалим апельсин из множества фруктов
 
-##### test failure 
-When a test is run and the actual outcome does not match the expected outcome. Compare with test error and test success.
+Проверим: множество фруктов содержит = {яблоко, груша}
 
-##### test result 
-A test or test suite can be run many times, each time yielding a different test 
-result.
+##### Разработка через тестирование (TDD, test-driven development)
 
-##### test run 
-A test or test suite can be run many times, each time yielding a different test
-result. Some commercial test automation tools record the results of each test run 
-for prosperity.
+Техника разработки программного обеспечения, которая основывается на повторении очень которких циклов:
 
-##### test success 
-A situation in which a test is run and all actual outcomes match the expected 
-outcomes. Compare with test failure and test error.
+* написание теста на новую/изменяемую функциональность;
+* имплементация функциональности. Тест должен пройти;
+* рефакторинг кода под соответствующие стандарты разработки.
 
-##### test suite 
-A way to name a collection of tests that we want to run together.
+##### Ошибка теста (test error)
+Ошибка, возникающая в ходе выполнения теста. Например, ошибка может возникнуть в проверяемой системе,
+или в самом тесте. Также ошибка может возникнуть в окружении (например, в операционной системе, виртуальной машине).
+Как правило, ошибка в самом тесте, а не в проверяемой системе.
 
-##### user story (or just story)
-The unit of incremental development in eXtreme Programming. We must INVEST 
-in good user stories—that is, each user story must be Independent, Negotiable, 
-Valuable, Estimatable, Small, and Testable [XP123]. A user story corresponds 
-roughly to a “feature” in non-eXtreme Programming terminology and is typically 
-decomposed into one or more tasks to be carried out by project team members.
+##### Падение теста (test failure) 
+Тест падает, когда в проверке утверждений актуальное значение не совпадает с ожидаемым. Обычно означает наличие ошибки в проверяемой системе.
+
+##### Результат теста (test result)
+Тест, или тестсуит могут быт ьзапущены несколько раз, и каждый раз возращать различные результаты проверок.
+
+##### Тестран (test run)
+Запуск некоторого числа тестов или тестсуитов. После выполнения тестов из тестрана, мы можем получить их результаты.
+
+##### Тест прошел (test success)
+Ситуация, в которой проверка каждого утверждения в тесте прошла успешна (актуальные значения совпали с ожидаемыми), и в процессе выполенения теста не произошло никаких ошибок теста.
+
+##### Тестсуит (test suite)
+Способ наименования некоторого числа тестов, которые могут быть запущены вместе.
+
+##### Стори (user story, story)
+Модуль, часть функциональности, из которых может состоять фича.
 
 ##### xUnit 
 Под термином "xUnit" подразумевается любой член семейства инфраструктур автоматизации тестов (Test Automation Framework), применяемых для автоматизации созданных вручную сценариев тестов. Для большинства современных языков программирования существует как минимум одна реализация xUnit. Обычно для автоматизации применяется тот же язык, который использовался для написания тестируемой ситстемы. Хотя это не всегда так, использовать подобную стратегию проще, поскольку тесты легко получают доступ к программному интерфейсу тестируемой системы.
