@@ -173,5 +173,29 @@
 ### Список литературы
 
 1. Gerard Meszaros xUnit Test Patterns: Refactoring Test Code ISBN-13: 978-0131495050
+2.	Проект JUnit http://junit.org/
+2.	Thucydides - framework для написания web-driver based BDD тестов http://thucydides.info/
+3.	JUnit, простой framework для написания тестов. http://junit.org/ 
+4.	Система сборки maven http://maven.apache.org/ 
+5.	АОП – аспектно-ориентированное программирование. http://ru.wikipedia.org/wiki/Аспектно-ориентированное_программирование
+6.	JUnit Rules https://github.com/junit-team/junit/wiki/Rules 
+7.	JUnit Test Watcher Rule https://github.com/junit-team/junit/wiki/Rules#testwatchmantestwatcher-rules 
+8.	ASM OW2 http://asm.ow2.org/ http://download.forge.objectweb.org/asm/asm4-guide.pdf 
+9.	Spring aspects http://docs.spring.io/spring/docs/2.0.8/reference/aop.html 
+10.	 Cglib http://cglib.sourceforge.net/ 
+11.	 AspectJ http://eclipse.org/aspectj/ 
+12.	 JAXB, xsd https://jaxb.java.net/ http://ru.wikipedia.org/wiki/XML_Schema 
+13.	 XSLT http://ru.wikipedia.org/wiki/XSLT 
+14.	 AngularJS http://angularjs.org/ 
+15.	 Bootstrap 3.0 http://getbootstrap.com/
+16.	 Single Page Application http://en.wikipedia.org/wiki/Single-page_application 
+17.	 Тестовая среда. Как найти общий язык с результатами тестов. http://tech.yandex.ru/events/meetings/testing-environment/talks/1462/ 
+18.	 Allure, github https://github.com/allure-framework/allure-core 
+19.	 Сайт проекта http://allure.qatools.ru/ 
+20.	 Allure, sonar http://sonar.qatools.ru/dashboard/index/419 
+21.	 Allure, пример отчета (логин и пароль вводить не нужно, можно залогиниться как гость) http://teamcity.qatools.ru/project.html?projectId=allure&tab=preport_project1_Development_Report 
+22.	 Jenkins, ci http://jenkins-ci.org/ 
+23.	 Habrahabr. Как сделать свой отчет для автотестов. http://habrahabr.ru/company/yandex/blog/200364/ 
+24.	 Allure framefork, github https://github.com/allure-framework?source=c 
 
 ### Приложения
