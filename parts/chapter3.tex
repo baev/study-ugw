@@ -1,3 +1,50 @@
-\chapter{Результаты} 
+\chapter{Проектирование программного продукта} 
 \label{chapter3}
+
+В предыдущих главах были подробно описаны концепции положенные в основу фремворка Allure. В этой главе
+описаны технические подробности реализации.
+
+\section{Подключение к тестам}
+
+Информацию, которую фремворк собирает о тестах, можно разделить на две группы:
+
+\begin{itemize}
+\item информация, которую можно получить, не меняя код тестов, например, имя теста, статус выполнения и время выполнения теста;
+\item та информация, которую будет предоставлять тестировщик. Например, сценарий теста, описание теста и требования к тесту.
+\end{itemize}
+
+Большинство фремворков xUnit предоставляют интерфейс листенера, позволяющий собирать первый тип информации. Данный подход полностью удовлетворяет требованиям, так как подключение листенеров в большинстве случаев вынесено на уровень конфигурации запуска тестов.
+
+Со вторым типом информации намного интереснее. В качестве примера рассмотрим реализацию для jUnit.
+
+\subsection{Шаги}
+
+В языке программирования Java шаг теста это любой метод, аннотированный аннотацией @Step. Для того, чтобы собрать информацию о пройденных шагах, надо выполнять некоторый код до и после каждого вызова такого метода. Автор воспользовался фреймворком AspectJ для решения этой задачи. Данный фремворк позволяет налету модифицировать байт-код классов во время их загрузки в JVM. Для того, чтобы "подцепиться" к нужным нам методам, надо описать точки входа (pointcuts) и аспекты (aspects): 
+
+\begin{lstlisting}
+@Pointcut("@annotation(ru.yandex.qatools.allure.annotations.Step)")
+public void withStepAnnotation() {
+    //pointcut body, should be empty
+}
+
+@Pointcut("execution(* *(..))")
+public void anyMethod() {
+    //pointcut body, should be empty
+}
+
+@Before("anyMethod() && withStepAnnotation()")
+public void stepStart(JoinPoint joinPoint) {
+    ...
+}
+
+@AfterThrowing(pointcut = "anyMethod() && withStepAnnotation()", throwing = "e")
+public void stepFailed(JoinPoint joinPoint, Throwable e) {
+    ...
+}
+
+@AfterReturning(pointcut = "anyMethod() && withStepAnnotation()", returning = "result")
+public void stepStop(JoinPoint joinPoint, Object result) {
+    ...
+}
+\end{lstlisting}
 
