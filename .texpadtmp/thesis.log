@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.1)  1 JUN 2014 19:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.1)  1 JUN 2014 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1005,12 +1005,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `thesis.toc'.
 
  [4] (./parts/intro.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
  [5
 
 ]) (./parts/chapter1.tex [6]
@@ -1071,19 +1071,19 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 Package csquotes Info: Input encoding change on input line 83.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [20] [21] [22]
-Package csquotes Info: Input encoding change on input line 134.
+) [20] [21]
+Package csquotes Info: Input encoding change on input line 127.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Package csquotes Info: Input encoding change on input line 156.
+Package csquotes Info: Input encoding change on input line 149.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [23]
-Package csquotes Info: Input encoding change on input line 200.
+) [22]
+Package csquotes Info: Input encoding change on input line 193.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [24]) (./parts/outro.tex [25])
+) [23]) (./parts/outro.tex [24])
 
 LaTeX Warning: Empty bibliography on input line 211.
 
@@ -1091,7 +1091,7 @@ LaTeX Warning: Empty bibliography on input line 211.
 Package caption Warning: Unused \captionsetup[table] on input line 58.
 See the caption package documentation for explanation.
 
-[26] (/Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.aux)
+[25] (/Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.aux)
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
@@ -1105,10 +1105,10 @@ Here is how much of TeX's memory you used:
  957 hyphenation exceptions out of 8191
  44i,6n,58p,1192b,1625s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc1728.pfb>
-Output written on /Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.pdf (25 pages, 259814 bytes).
+Output written on /Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.pdf (24 pages, 257403 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 123 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
