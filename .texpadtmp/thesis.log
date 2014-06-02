@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.1)  1 JUN 2014 21:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.6.1)  2 JUN 2014 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -907,7 +907,12 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'russian'.
- (/Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.aux)
+ (/Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.aux
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2013/05/01 v2.6 biblatex localization (PK/JW/AB)
+))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
@@ -930,12 +935,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout3 = `thesis.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-
-Package biblatex Warning: File 'thesis.bbl' is wrong format version - expected 2.2.
-
 Package biblatex Info: ... file 'thesis.bbl' found.
-(./thesis.bbl)
+ (/Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 160.
 Package biblatex Info: Reference segment=0 on input line 160.
  (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1018,47 +1019,37 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 []\T2A/cmr/bx/n/14.4 Разработка че-рез те-сти-ро-ва-ние (TDD, test-driven
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 35--37
+Underfull \hbox (badness 1112) in paragraph at lines 37--39
 \T2A/cmr/bx/n/14.4 development) \T2A/cmr/m/n/14.4 --- тех-ни-ка раз-ра-бот-ки про-грамм-но-го обес-пе-че-ния, ко-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 []\T2A/cmr/bx/n/14.4 Разработка че-рез тре-бо-ва-ния (BDD, behavior-driven
  []
 
 [8] [9] [10]
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 108.
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 110.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Package csquotes Info: Input encoding change on input line 108.
+Package csquotes Info: Input encoding change on input line 110.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [11]) (./parts/chapter2.tex [12]
 \IeC {\CYRG }\IeC {\cyrl }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyra } 2.
-Package csquotes Info: Input encoding change on input line 18.
+Package csquotes Info: Input encoding change on input line 19.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [13
 
-]
-Underfull \hbox (badness 1248) in paragraph at lines 38--39
-[]\T2A/cmr/m/n/14.4 Также важ-ной фоз-мож-но-стью Thucydides яв-ля-лось со-хра-не-ние
- []
-
-[14] [15]) (./parts/chapter3.tex [16]
+] [14] [15]) (./parts/chapter3.tex [16]
 \IeC {\CYRG }\IeC {\cyrl }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyra } 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
-\T2A/cmss/bx/n/24.88 Глава 3. Ре-а-ли-за-ция Allure
- []
-
 Package csquotes Info: Input encoding change on input line 14.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -1070,70 +1061,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 [17
 
 ] [18]
-Package csquotes Info: Input encoding change on input line 49.
+Package csquotes Info: Input encoding change on input line 48.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [19]
-Package csquotes Info: Input encoding change on input line 84.
+) [19] [20]
+Package csquotes Info: Input encoding change on input line 83.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Package csquotes Info: Input encoding change on input line 106.
+Package csquotes Info: Input encoding change on input line 105.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [20] [21] <pic/structure.png, id=76, 446.66875pt x 654.445pt>
+) [21] [22] <pic/structure.png, id=79, 446.66875pt x 654.445pt>
 File: pic/structure.png Graphic file (type png)
  <use pic/structure.png>
-Package pdftex.def Info: pic/structure.png used on input line 171.
+Package pdftex.def Info: pic/structure.png used on input line 170.
 (pdftex.def)             Requested size: 310.7099pt x 455.24408pt.
- [22] [23 <./pic/structure.png (PNG copy)>]
-
-./parts/chapter3.tex:199: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.199 \newline
-              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
+ [23] [24 <./pic/structure.png (PNG copy)>] [25] (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-Package csquotes Info: Input encoding change on input line 204.
+Package csquotes Info: Input encoding change on input line 203.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [24]) (./parts/outro.tex [25] [26])
+) [26]) (./parts/outro.tex [27]) [28]
+./thesis.tex:211: Undefined control sequence.
+\blx@item@bibliography ->\itemm 
+                                
+l.211 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Empty bibliography on input line 211.
+./thesis.tex:211: Undefined control sequence.
+\blx@item@bibliography ->\itemm 
+                                
+l.211 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Package caption Warning: Unused \captionsetup[table] on input line 58.
 See the caption package documentation for explanation.
 
-[27] (/Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.aux)
+[29
+
+] (/Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.aux)
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13227 strings out of 493315
- 200108 string characters out of 6137905
- 647407 words of memory out of 5000000
- 16423 multiletter control sequences out of 15000+600000
- 15470 words of font info for 37 fonts, out of 8000000 for 9000
+ 13377 strings out of 493315
+ 203071 string characters out of 6137905
+ 661937 words of memory out of 5000000
+ 16569 multiletter control sequences out of 15000+600000
+ 17123 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,6n,58p,1192b,2189s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc1728.pfb>
-Output written on /Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.pdf (26 pages, 263195 bytes).
+ 44i,6n,58p,1192b,2727s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfxc1728.pfb>
+Output written on /Users/charlie/IdeaProjects/ugw/.texpadtmp/thesis.pdf (28 pages, 305677 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 149 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
