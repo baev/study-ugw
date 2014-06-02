@@ -1933,6 +1933,20 @@
   <bcf:section number="0">
     <bcf:citekey order="1">junit_home</bcf:citekey>
     <bcf:citekey order="2">kent_beck</bcf:citekey>
+    <bcf:citekey order="3">jbehave_home</bcf:citekey>
+    <bcf:citekey order="4">xunit_test_patterns</bcf:citekey>
+    <bcf:citekey order="5">surefire_home</bcf:citekey>
+    <bcf:citekey order="6">thucydides_home</bcf:citekey>
+    <bcf:citekey order="7">john_smart_home</bcf:citekey>
+    <bcf:citekey order="8">thucydides_docs</bcf:citekey>
+    <bcf:citekey order="9">allure_home</bcf:citekey>
+    <bcf:citekey order="10">maven_home</bcf:citekey>
+    <bcf:citekey order="11">freemarker_home</bcf:citekey>
+    <bcf:citekey order="12">cglib_home</bcf:citekey>
+    <bcf:citekey order="13">ow2_asm_home</bcf:citekey>
+    <bcf:citekey order="14">pytest_home</bcf:citekey>
+    <bcf:citekey order="15">angularjs_home</bcf:citekey>
+    <bcf:citekey order="16">spa</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>
