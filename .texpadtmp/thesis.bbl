@@ -19,43 +19,23 @@
 
 \refsection{0}
   \sortlist{entry}{none}
-    \entry{ipl_cite}{online}{}
+    \entry{junit_home}{online}{}
       \field{sortinit}{0}
-      \field{labeltitle}{Structural coverage metrics}
+      \field{labeltitle}{JUnit Home Page}
       \field{hyphenation}{english}
-      \field{title}{Structural coverage metrics}
+      \field{title}{JUnit Home Page}
       \verb{url}
-      \verb http://www.ipl.com/pdf/p0823.pdf
+      \verb http://junit.org/
       \endverb
     \endentry
-    \entry{too_old_metrics}{article}{}
-      \name{labelname}{3}{}{%
-        {{hash=5d814da3a8a296df51b614910ac3c965}{Weiser}{W\bibinitperiod}{M.\bibnamedelimi D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{hash=5f1f0446705635d552ac74916048c2e5}{Gannon}{G\bibinitperiod}{J.\bibnamedelimi D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{hash=cdbc9b6ba0bb72bc983aa3813389414b}{McMullin}{M\bibinitperiod}{P.\bibnamedelimi R.}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{hash=5d814da3a8a296df51b614910ac3c965}{Weiser}{W\bibinitperiod}{M.\bibnamedelimi D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{hash=5f1f0446705635d552ac74916048c2e5}{Gannon}{G\bibinitperiod}{J.\bibnamedelimi D.}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
-        {{hash=cdbc9b6ba0bb72bc983aa3813389414b}{McMullin}{M\bibinitperiod}{P.\bibnamedelimi R.}{P\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Los Alamitos, CA, USA}%
-      }
-      \list{publisher}{1}{%
-        {IEEE Computer Society Press}%
-      }
-      \strng{namehash}{c57093e113ffb2e7cc650a3ae4239317}
-      \strng{fullhash}{c57093e113ffb2e7cc650a3ae4239317}
+    \entry{kent_beck}{online}{}
       \field{sortinit}{0}
-      \field{labeltitle}{Comparison of Structural Test Coverage Metrics}
-      \field{issn}{0740-7459}
-      \field{journaltitle}{IEEE Softw.}
-      \field{number}{2}
-      \field{title}{Comparison of Structural Test Coverage Metrics}
-      \field{volume}{2}
-      \field{year}{1985}
-      \field{pages}{80\bibrangedash 85}
+      \field{labeltitle}{Kent Beck Wiki Page}
+      \field{hyphenation}{english}
+      \field{title}{Kent Beck Wiki Page}
+      \verb{url}
+      \verb http://en.wikipedia.org/wiki/Kent_Beck
+      \endverb
     \endentry
   \endsortlist
 \endrefsection

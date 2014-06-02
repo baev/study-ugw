@@ -1931,9 +1931,8 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">ipl_cite</bcf:citekey>
-    <bcf:citekey order="1">too_old_metrics</bcf:citekey>
-    <bcf:citekey order="2">ipl_cite</bcf:citekey>
+    <bcf:citekey order="1">junit_home</bcf:citekey>
+    <bcf:citekey order="2">kent_beck</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>

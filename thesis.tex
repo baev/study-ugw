@@ -22,7 +22,7 @@
       \setlength{\parsep}{\bibparsep}}%
       \renewcommand*{\makelabel}[1]{\hss##1}}
   {\endlist}
-  {\itemm}
+  {\item}
 
 
 
@@ -43,7 +43,6 @@
 % \usepackage{verbatim}
 \usepackage{sty/rac}
 \usepackage{listings}
-\usepackage{sty/scala}
 \usepackage[singlelinecheck=false]{caption}
 
 \usepackage{xcolor, colortbl}
@@ -86,8 +85,7 @@
 
 \renewcommand{\proof}{\\\textbf{Доказательство.}~}
 \renewcommand{\lstlistingname}{Листинг}
- 
- 
+
  
 % Default settings for code listings
 \lstset{frame=tb,
@@ -103,7 +101,6 @@
   commentstyle=\color{dkgreen},
   stringstyle=\color{mauve},
   escapeinside={\%*}{*)},
-  frame=single,
   breaklines=true,
   breakatwhitespace=true
   tabsize=3,
@@ -112,6 +109,7 @@
 }
 
 \lstdefinestyle{XML} {
+    frame=tb,
     language=XML,
     extendedchars=true, 
     breaklines=true,
@@ -207,8 +205,10 @@
 \input{parts/chapter3.tex}
 \input{parts/outro.tex}
 
+
 \printbibliography
 
 %\startappendices
 %\input{parts/appendix1.tex}
+
 \end{document}

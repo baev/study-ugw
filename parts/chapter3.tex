@@ -11,7 +11,7 @@
 
 Проект был поделен на два модуля: адаптер для JUnit, который собирал данные о ходе теста, и плагин для Maven, который генерировал по этим данным отчет. Адаптер использовал механизм JUnit Rules. Для того, чтобы начать собирать информацию о тесте, необходимо было добавить в код теста:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=Пример подключения к тестам JUnit Rules.]
 @ClassRule
 public static TestSuiteReportRule testSuite = new TestSuiteReportRule();
 
@@ -45,7 +45,8 @@ public TestCaseReportRule testCase = new TestCaseReportRule(testSuite, this);
 
 Несмотря на то, что фремворк уже начали использовать в некоторых проектах, большая часть проектов отказывалась подлючать Allure из-за сложностей с подключением. Дело в том, что шаги определялись очень сложным образом, и перевести существующие библиотеки шагов на предлагаемый способ подключения не предоставлялось возможным. Тогда было решено использовать фремворк AspectJ для сбора информации о пройденых шагах. Данный фремворк позволяет встроить некоторый код в байт-код загружаемого ClassLoader'ом класса. Притом, не надо думать об устройстве и структуре байт кода, достаточно просто описать  точки входа (pointcuts) и аспекты (aspects): 
 
-\begin{lstlisting}
+\newpage
+\begin{lstlisting}[caption=Пример описание точек входа и аспектов.]
 @Pointcut("@annotation(ru.yandex.qatools.allure.annotations.Step)")
 public void withStepAnnotation() {
     //pointcut body, should be empty
@@ -80,7 +81,7 @@ public void stepStop(JoinPoint joinPoint, Object result) {
 
 Уже на данном этапе одним из основных достоинств разработаного автором фреймворка была прозрачная интеграция с существующими тестовыми системами. Рассмотрим простейший JUnit тест:
  
-\begin{lstlisting}
+\begin{lstlisting}[caption=Простой JUnit тест.]
 public class SimpleTest {
 
     @Test
@@ -102,7 +103,7 @@ public class SimpleTest {
 
 Чтобы отобразить информацию о тестовом сценарии достаточно проаннотировать соответствующие методы аннотацией @Step.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption=Простой JUnit тест с добавлением шагов.]
 public class SimpleTest {
 
     @Test
@@ -200,7 +201,7 @@ API для языка программирования представляет 
 
 Собранная о тесте информация серелизуется в виде XML файлов. Для каждого теста создается свой файл. Сохраняются только те данные, которые нельзя синтезировать, что упрощает реализацию и поддержку интерфейса для языка программирования. Простейший пример сохранненной информации об одном тесте:
 
-\begin{lstlisting}[style=XML]
+\begin{lstlisting}[style=XML, caption=Пример простой XML-модели]
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1400681607876" stop="1400681627123">
     <name>my.company.SampleTest</name>
