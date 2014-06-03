@@ -120,7 +120,8 @@
     columns=fullflexible,
     commentstyle=\color{gray}\upshape,
     morestring=[b]",
-    morekeywords={xmlns,version,type,stop,start,status,xmlns:ns2,encoding},
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>}
 }
 
 \lstnewenvironment{snippet}[1][]%
@@ -208,7 +209,7 @@
 
 \printbibliography
 
-%\startappendices
-%\input{parts/appendix1.tex}
+\startappendices
+\input{parts/appendix1.tex}
 
 \end{document}
