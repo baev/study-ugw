@@ -1,0 +1,173 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{junit_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{JUnit Home Page}
+      \field{hyphenation}{english}
+      \field{title}{JUnit Home Page}
+      \verb{url}
+      \verb http://junit.org/
+      \endverb
+    \endentry
+    \entry{kent_beck}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Kent Beck Wiki Page}
+      \field{hyphenation}{english}
+      \field{title}{Kent Beck Wiki Page}
+      \verb{url}
+      \verb http://en.wikipedia.org/wiki/Kent_Beck
+      \endverb
+    \endentry
+    \entry{jbehave_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{JBehave Home Page}
+      \field{hyphenation}{english}
+      \field{title}{JBehave Home Page}
+      \verb{url}
+      \verb http://jbehave.org/
+      \endverb
+    \endentry
+    \entry{xunit_test_patterns}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=4f1a95ce8778644a8c902c35ce03bd20}{Meszaros}{M\bibinitperiod}{Gerard}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4f1a95ce8778644a8c902c35ce03bd20}{Meszaros}{M\bibinitperiod}{Gerard}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4f1a95ce8778644a8c902c35ce03bd20}
+      \strng{fullhash}{4f1a95ce8778644a8c902c35ce03bd20}
+      \field{sortinit}{0}
+      \field{labeltitle}{xUnit Test Patterns: Refactoring Test Code}
+      \field{title}{xUnit Test Patterns: Refactoring Test Code}
+    \endentry
+    \entry{surefire_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Maven Surefire Report Plugin}
+      \field{hyphenation}{english}
+      \field{title}{Maven Surefire Report Plugin}
+      \verb{url}
+      \verb http://maven.apache.org/surefire/maven-surefire-report-plugin/
+      \endverb
+    \endentry
+    \entry{thucydides_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Thucydides Home Page}
+      \field{hyphenation}{english}
+      \field{title}{Thucydides Home Page}
+      \verb{url}
+      \verb http://www.thucydides.info/
+      \endverb
+    \endentry
+    \entry{john_smart_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{John's biography}
+      \field{hyphenation}{english}
+      \field{title}{John's biography}
+      \verb{url}
+      \verb http://www.wakaleo.com/about-us/about-wakaleo-consulting
+      \endverb
+    \endentry
+    \entry{thucydides_docs}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Thucydides Documentation Page}
+      \field{hyphenation}{english}
+      \field{title}{Thucydides Documentation Page}
+      \verb{url}
+      \verb http://www.thucydides.info/docs/thucydides.pdf
+      \endverb
+    \endentry
+    \entry{allure_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Allure Home Page}
+      \field{hyphenation}{english}
+      \field{title}{Allure Home Page}
+      \verb{url}
+      \verb https://github.com/allure-framework/allure-core
+      \endverb
+    \endentry
+    \entry{maven_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Maven Home Page}
+      \field{hyphenation}{english}
+      \field{title}{Maven Home Page}
+      \verb{url}
+      \verb http://maven.apache.org/
+      \endverb
+    \endentry
+    \entry{freemarker_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Freemarker Home Page}
+      \field{hyphenation}{english}
+      \field{title}{Freemarker Home Page}
+      \verb{url}
+      \verb http://freemarker.org/
+      \endverb
+    \endentry
+    \entry{cglib_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Cglib Home Page}
+      \field{hyphenation}{english}
+      \field{title}{Cglib Home Page}
+      \verb{url}
+      \verb https://github.com/cglib/cglib
+      \endverb
+    \endentry
+    \entry{ow2_asm_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{OW2 ASM Home Page}
+      \field{hyphenation}{english}
+      \field{title}{OW2 ASM Home Page}
+      \verb{url}
+      \verb http://asm.ow2.org/
+      \endverb
+    \endentry
+    \entry{pytest_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{PyTest Home Page}
+      \field{hyphenation}{english}
+      \field{title}{PyTest Home Page}
+      \verb{url}
+      \verb http://pytest.org/latest/
+      \endverb
+    \endentry
+    \entry{angularjs_home}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{AngularJS Home Page}
+      \field{hyphenation}{english}
+      \field{title}{AngularJS Home Page}
+      \verb{url}
+      \verb https://angularjs.org/
+      \endverb
+    \endentry
+    \entry{spa}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Single Page Application Wiki}
+      \field{hyphenation}{english}
+      \field{title}{Single Page Application Wiki}
+      \verb{url}
+      \verb http://en.wikipedia.org/wiki/Single-page_application
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

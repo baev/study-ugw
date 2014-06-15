@@ -432,7 +432,8 @@
 }
 
 \def\startappendices{\par
- \def\thechapter{\Alph{chapter}}
+ %               \Alph
+ \def\thechapter{\arabic{chapter}}
  \def\thesection{\thechapter.\arabic{section}}
 
  \ifx \selectfont\undefined
@@ -442,26 +443,36 @@
  \def\themap{{\rm \thechapter}.\@arabic\c@map}
  \def\theanything{{\rm \thechapter}.\@arabic\c@anything}
  \else
- \def\theequation{{\mathrm \thechapter}.\arabic{equation}}
- \def\thefigure{{\mathrm \thechapter}.\@arabic\c@figure}
- \def\thetable{{\mathrm \thechapter}.\@arabic\c@table}
- \def\themap{{\mathrm \thechapter}.\@arabic\c@map}
- \def\theanything{{\mathrm \thechapter}.\@arabic\c@anything}
+ \def\theequation{{
+     % \mathrm
+     \thechapter}.\arabic{equation}}
+ \def\thefigure{{
+     % \mathrm
+     \thechapter}.\@arabic\c@figure}
+ \def\thetable{{
+     % \mathrm
+     \thechapter}.\@arabic\c@table}
+ \def\themap{{
+     % \mathrm
+     \thechapter}.\@arabic\c@map}
+ \def\theanything{{
+     % \mathrm
+     \thechapter}.\@arabic\c@anything}
  \fi
 
  \let\theappendix=\thechapter
  \let\chapter=\startanappendix
  \setcounter{chapter}{0}
  \setcounter{section}{0}
- \def\@chapapp{APPENDIX}
+ \def\@chapapp{\kw@APPENDIX}
  \def\tocname{loa}
  \pagestyle{plain}
  \clearpage
  \thispagestyle{chappage}
- \addcontentsline{toc}{chapter}{APPENDICES}
+ \addcontentsline{toc}{chapter}{\kw@APPENDICESLIST}
  \hbox{ }
  \vfill
- \centerline{\large\bf APPENDICES}
+ \centerline{\large\bf \kw@APPENDICESLIST}
  \vfill
 }
 
@@ -516,36 +527,35 @@
 \let\endthebibliography=\endlist
 \def\startbibliography{ }
 
-\newenvironment{code}[1][]{
-\ttfamily\obeylines\obeyspaces\frenchspacing\normalsize%
-
-\def\abstract{\textbf{abstract}}
-\def\catch{\textbf{catch}}
-\def\class{\textbf{class}}
-\def\extends{\textbf{extends}}
-\def\final{\textbf{final}}
-\def\implements{\textbf{implements}}
-\def\interface{\textbf{interface}}
-\def\new{\textbf{new}}
-\def\null{\textbf{null}}
-\def\private{\textbf{private}}
-\def\protected{\textbf{protected}}
-\def\public{\textbf{public}}
-\def\return{\textbf{return}}
-\def\static{\textbf{static}}
-\def\super{\textbf{super}}
-\def\this{\textbf{this}}
-\def\try{\textbf{try}}
-\def\void{\textbf{void}}
-
-\vspace{5mm}
-}
-{
-\vspace{5mm}
-}
+% \newenvironment{code}[1][]{
+% \ttfamily\obeylines\obeyspaces\frenchspacing\normalsize%
+% 
+% \def\abstract{\textbf{abstract}}
+% \def\catch{\textbf{catch}}
+% \def\class{\textbf{class}}
+% \def\extends{\textbf{extends}}
+% \def\final{\textbf{final}}
+% \def\implements{\textbf{implements}}
+% \def\interface{\textbf{interface}}
+% \def\new{\textbf{new}}
+% \def\null{\textbf{null}}
+% \def\private{\textbf{private}}
+% \def\protected{\textbf{protected}}
+% \def\public{\textbf{public}}
+% \def\return{\textbf{return}}
+% \def\static{\textbf{static}}
+% \def\super{\textbf{super}}
+% \def\this{\textbf{this}}
+% \def\try{\textbf{try}}
+% \def\void{\textbf{void}}
+% 
+% \vspace{5mm}
+% }
+% {
+% \vspace{5mm}
+% }
 
 
 %Additional 
 
-\def\code#1{\b\t{\hbox{#1}}}
-
+% \def\code#1{\b\t{\hbox{#1}}}

@@ -1,4 +1,4 @@
-\chapter{Практические исследования} 
+\chapter{Разработка} 
 \label{chapter3}
 
 \section{Разработка Allure Framework}
@@ -167,16 +167,95 @@ public class SimpleTest {
 
 Общая схема работы Allure показана на рисунке \ref{fig:allure}. Рассмотрим подробнее назначение отдельных частей.
 
-\begin{figure}[htb]
+\subsection{Listener}
+
+В большинстве случаев тесты пишутся с использованием тестового фреймворка. И чтобы собрать информацию о ходе выполнения тестов, нужно уметь взаимодействовать с этим тестовым фреймворком. Именно для этого используется механизм листнеров. В каждом конкретном случае взаимодействие происходит по-своему. Например, в случае JUnit используется RunListener:
+
+\begin{lstlisting}[caption=С помощью JUnit RunListener можно собирать информацию о ходе выполения теста.]
+public class RunListener {
+    /**
+     * Called before any tests have been run. This may be called on an
+     * arbitrary thread.
+     *
+     * @param description describes the tests to be run
+     */
+    public void testRunStarted(Description description) throws Exception {
+    }
+
+    /**
+     * Called when all tests have finished. This may be called on an
+     * arbitrary thread.
+     *
+     * @param result the summary of the test run, including all the tests that failed
+     */
+    public void testRunFinished(Result result) throws Exception {
+    }
+
+    /**
+     * Called when an atomic test is about to be started.
+     *
+     * @param description the description of the test that is about to be run
+     * (generally a class and method name)
+     */
+    public void testStarted(Description description) throws Exception {
+    }
+
+    /**
+     * Called when an atomic test has finished, whether the test succeeds or fails.
+     *
+     * @param description the description of the test that just ran
+     */
+    public void testFinished(Description description) throws Exception {
+    }
+
+    /**
+     * Called when an atomic test fails, or when a listener throws an exception.
+     *
+     * <p>In the case of a failure of an atomic test, this method will be called
+     * with the same {@code Description} passed to
+     * {@link #testStarted(Description)}, from the same thread that called
+     * {@link #testStarted(Description)}.
+     *
+     * <p>In the case of a listener throwing an exception, this will be called with
+     * a {@code Description} of {@link Description#TEST_MECHANISM}, and may be called
+     * on an arbitrary thread.
+     *
+     * @param failure describes the test that failed and the exception that was thrown
+     */
+    public void testFailure(Failure failure) throws Exception {
+    }
+
+    /**
+     * Called when an atomic test flags that it assumes a condition that is
+     * false
+     *
+     * @param failure describes the test that failed and the
+     * {@link org.junit.AssumptionViolatedException} that was thrown
+     */
+    public void testAssumptionFailure(Failure failure) {
+    }
+
+    /**
+     * Called when a test will not be run, generally because a test method is annotated
+     * with {@link org.junit.Ignore}.
+     *
+     * @param description describes the test that will not be run
+     */
+    public void testIgnored(Description description) throws Exception {
+    }
+}
+\end{lstlisting}
+
+\begin{figure}
 \centering
 \includegraphics[height=160mm]{structure.png}
 \caption{Общая схема фреймворка Allure}
 \label{fig:allure}
 \end{figure}
 
-\subsection{Listener}
+Используя свою реализацию RunListener можно построить собрать основную информацию о ходе выполнения теста. 
 
-Для большинства тестовых фреймворков xUnit есть возможность подключить листенер для сбора информации о ходе тестов. Мало того, подключение листенера, как правило, вынесено на уровень конфигурации запуска, что полностью удавлетворяет требованиям работы. Для адаптации тестового фреймворка достаточно реализовать тест листенер используя соответсвующее API языка программирования.
+Подключение листенера, как правило, вынесено на уровень конфигурации запуска, что полностью удавлетворяет требованиям работы. Для адаптации тестового фреймворка достаточно реализовать листенер используя соответсвующее API языка программирования.
 
 Однако стоит заметить, что не всю необходимую информацию о ходе теста можно собрать используя листенер, так как он оперирует терминологией xUnit. Сбор остальной информации о тестах, например информацию о пройденных шагах и сделанных аттачментах, будет реализован на уровне API языка программирования.
 
@@ -218,22 +297,41 @@ API для языка программирования представляет 
 
 На следующем этапе данные конвертируются в более удобный для отображения формат. Например, данные заранее группируются для различных отображений в отчете (xUnit, BDD, Defects). Также считается статистическая информация и генерируются данные для графиков.
 
+Преборазование между моделями происходит с помощью XSLT. 
+
 \subsection{Report}
 
-Отображает результаты разными способами. 
+Отображает результаты разными способами: 
 
-\subsubsection{xUnit}
+\begin{itemize}
+\item xUnit --- в данном табе используется терминология xUnit. Сначала тесты группируются по тест суитам, затем по самим тестам. Также присутствует возможность сортировать тесты по имени, важности, статусу и времени выполнения.
+\item BDD --- данный таб используется для отображения результатов проверки требований к продукту. Сначала тесты группируются по требованию, потом по истории. Позволяет сразу понять, какие требования нарушаются в тестируемом продукте.
+\item Defects --- группирует тесты по тексту сообщения. Также разбивает все ошибки на две группы --- продуктовые дефекты и ошибки тестов. 
+\item Timeline --- отображает ход выполнения тестов с течением времени. Помогает находить ошибки типа "вчера в 15:30 сервис не работал".
+\end{itemize}
 
-В данном табе используется терминология xUnit. Сначала тесты группируются по тест суитам, затем по самим тестам. Также присутствует возможность сортировать тесты по имени, важности, статусу и времени выполнения.
+Также есть различные графики, отображающие картину выполнения тестов в целом. Каждое из этих отображений результатов полезно разным людям. Менеджеру --- BDD, разработчику --- xUnit, тестировщику --- Defects. Отчет хорошо работает с большим количеством тестов (десятки тысяч).
 
-\subsubsection{BDD}
+\section{Сравнение}
 
-Данный таб используется для отображения результатов проверки требований к продукту. Сначала тесты группируются по требованию, потом по истории. Позволяет сразу понять, какие требования нарушаются в тестируемом продукте.
+Как было сказано ранее, на момент написания автором работы, систем, решающих поставленную задачу не было. Были рассмотрены системы, которые решали эту задачу частично. В данном разделе сравниваются эти системы с Allure Framework.
 
-\subsubsection{Defects}
 
-Группирует тесты по тексту сообщения. Также разбивает все ошибки на две группы --- продуктовые дефекты и ошибки тестов. 
+\begin{center}
+\begin{tabular}{ | p{4cm} | p{4cm} | p{4cm} | p{4cm} | }
+\hline
+& Surefire & Thucydides & Allure Framework \\ \hline
+Статус теста & Да & Да & Да \\ \hline
+Сообщение об ошибке & Да & Да & Да \\ \hline
+Длительность теста & Да & Да & Да \\ \hline
+Сценарий теста & Нет & Да & Да \\ \hline
+Возможность сохранения аттачментов & Нет & Только скриншоты & Да \\ \hline
+Параметры теста & Нет & Нет & Да \\ \hline
+Простое подключение & Да & Нет & Да \\ \hline
+Типы тестов & В основном модульные & Тесты на веб-интерфейс с использованием WebDriver & Любые \\ \hline
+BDD & Нет & Да & Да \\ \hline
+Поддерживает основные языки программирования и тестовые фремворки & Да & Только JUnit (Java) & Да \\ \hline
+\end{tabular}
+\end{center}
 
-\subsubsection{Timeline}
 
-Отображает ход выполнения тестов с течением времени. Помогает находить ошибки типа "вчера в 15:30 сервис не работал".
