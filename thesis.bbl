@@ -19,6 +19,86 @@
 
 \refsection{0}
   \sortlist{entry}{none}
+    \entry{aspectj_cookbook}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=b4d4cb33293a234be8791fb12481a160}{Miles}{M\bibinitperiod}{Russ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b4d4cb33293a234be8791fb12481a160}{Miles}{M\bibinitperiod}{Russ}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{b4d4cb33293a234be8791fb12481a160}
+      \strng{fullhash}{b4d4cb33293a234be8791fb12481a160}
+      \field{sortinit}{0}
+      \field{labeltitle}{AspectJ Cookbook}
+      \field{isbn}{978-0596006549}
+      \field{title}{AspectJ Cookbook}
+      \field{year}{2004}
+      \field{pages}{360}
+    \endentry
+    \entry{tdd_book}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=c5dcbe71f60a8d55caa11fe1493614d0}{Beck}{B\bibinitperiod}{Kent}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=c5dcbe71f60a8d55caa11fe1493614d0}{Beck}{B\bibinitperiod}{Kent}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \strng{fullhash}{c5dcbe71f60a8d55caa11fe1493614d0}
+      \field{sortinit}{0}
+      \field{labeltitle}{Test Driven Development: By Example}
+      \field{isbn}{978-0321146533}
+      \field{title}{Test Driven Development: By Example}
+      \field{year}{2002}
+      \field{pages}{240}
+    \endentry
+    \entry{xunit_test_patterns}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=4f1a95ce8778644a8c902c35ce03bd20}{Meszaros}{M\bibinitperiod}{Gerard}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=4f1a95ce8778644a8c902c35ce03bd20}{Meszaros}{M\bibinitperiod}{Gerard}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{4f1a95ce8778644a8c902c35ce03bd20}
+      \strng{fullhash}{4f1a95ce8778644a8c902c35ce03bd20}
+      \field{sortinit}{0}
+      \field{labeltitle}{xUnit Test Patterns: Refactoring Test Code}
+      \field{isbn}{978-0131495050}
+      \field{title}{xUnit Test Patterns: Refactoring Test Code}
+      \field{year}{2007}
+      \field{pages}{833}
+    \endentry
+    \entry{maven_guide}{book}{}
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \field{sortinit}{0}
+      \field{labeltitle}{Maven: The Definitive Guide}
+      \field{isbn}{978-0596517335}
+      \field{title}{Maven: The Definitive Guide}
+      \field{year}{2008}
+      \field{pages}{470}
+    \endentry
     \entry{junit_home}{online}{}
       \field{sortinit}{0}
       \field{labeltitle}{JUnit Home Page}
@@ -45,19 +125,6 @@
       \verb{url}
       \verb http://jbehave.org/
       \endverb
-    \endentry
-    \entry{xunit_test_patterns}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=4f1a95ce8778644a8c902c35ce03bd20}{Meszaros}{M\bibinitperiod}{Gerard}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=4f1a95ce8778644a8c902c35ce03bd20}{Meszaros}{M\bibinitperiod}{Gerard}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{4f1a95ce8778644a8c902c35ce03bd20}
-      \strng{fullhash}{4f1a95ce8778644a8c902c35ce03bd20}
-      \field{sortinit}{0}
-      \field{labeltitle}{xUnit Test Patterns: Refactoring Test Code}
-      \field{title}{xUnit Test Patterns: Refactoring Test Code}
     \endentry
     \entry{surefire_home}{online}{}
       \field{sortinit}{0}
@@ -102,15 +169,6 @@
       \field{title}{Allure Home Page}
       \verb{url}
       \verb https://github.com/allure-framework/allure-core
-      \endverb
-    \endentry
-    \entry{maven_home}{online}{}
-      \field{sortinit}{0}
-      \field{labeltitle}{Maven Home Page}
-      \field{hyphenation}{english}
-      \field{title}{Maven Home Page}
-      \verb{url}
-      \verb http://maven.apache.org/
       \endverb
     \endentry
     \entry{freemarker_home}{online}{}
@@ -165,6 +223,60 @@
       \field{title}{Single Page Application Wiki}
       \verb{url}
       \verb http://en.wikipedia.org/wiki/Single-page_application
+      \endverb
+    \endentry
+    \entry{qa_bicycle}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Подключение Allure}
+      \field{hyphenation}{russian}
+      \field{title}{Подключение Allure}
+      \verb{url}
+      \verb http://qa-bicycle.blogspot.ru/2014/05/allure.html
+      \endverb
+    \endentry
+    \entry{hello_allure}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Привет, Allure}
+      \field{hyphenation}{russian}
+      \field{title}{Привет, Allure}
+      \verb{url}
+      \verb http://artkoshelev.github.io/posts/hello-allure/
+      \endverb
+    \endentry
+    \entry{step_by_step}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Шаг за шагом, Allure}
+      \field{hyphenation}{russian}
+      \field{title}{Шаг за шагом, Allure}
+      \verb{url}
+      \verb http://artkoshelev.github.io/posts/step-by-step/
+      \endverb
+    \endentry
+    \entry{testing_enviroment}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{Тестовая Среда, доклад про Allure}
+      \field{hyphenation}{russian}
+      \field{title}{Тестовая Среда, доклад про Allure}
+      \verb{url}
+      \verb http://tech.yandex.ru/events/meetings/testing-environment/talks/1462/
+      \endverb
+    \endentry
+    \entry{selconf}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{SeleniumCamp, доклад про Allure}
+      \field{hyphenation}{russian}
+      \field{title}{SeleniumCamp, доклад про Allure}
+      \verb{url}
+      \verb http://seleniumcamp.com/program/#allure
+      \endverb
+    \endentry
+    \entry{pycon_russia}{online}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{PyCon Russia, доклад про Allure}
+      \field{hyphenation}{russian}
+      \field{title}{PyCon Russia, доклад про Allure}
+      \verb{url}
+      \verb http://pycon.ru/2014/program/content/python_pytest/
       \endverb
     \endentry
   \endsortlist

@@ -1931,22 +1931,33 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">junit_home</bcf:citekey>
-    <bcf:citekey order="2">kent_beck</bcf:citekey>
-    <bcf:citekey order="3">jbehave_home</bcf:citekey>
-    <bcf:citekey order="4">xunit_test_patterns</bcf:citekey>
-    <bcf:citekey order="5">surefire_home</bcf:citekey>
-    <bcf:citekey order="6">thucydides_home</bcf:citekey>
-    <bcf:citekey order="7">john_smart_home</bcf:citekey>
-    <bcf:citekey order="8">thucydides_docs</bcf:citekey>
-    <bcf:citekey order="9">allure_home</bcf:citekey>
-    <bcf:citekey order="10">maven_home</bcf:citekey>
-    <bcf:citekey order="11">freemarker_home</bcf:citekey>
-    <bcf:citekey order="12">cglib_home</bcf:citekey>
-    <bcf:citekey order="13">ow2_asm_home</bcf:citekey>
-    <bcf:citekey order="14">pytest_home</bcf:citekey>
-    <bcf:citekey order="15">angularjs_home</bcf:citekey>
-    <bcf:citekey order="16">spa</bcf:citekey>
+    <bcf:citekey order="1">aspectj_cookbook</bcf:citekey>
+    <bcf:citekey order="2">tdd_book</bcf:citekey>
+    <bcf:citekey order="3">xunit_test_patterns</bcf:citekey>
+    <bcf:citekey order="4">maven_guide</bcf:citekey>
+    <bcf:citekey order="5">junit_home</bcf:citekey>
+    <bcf:citekey order="6">kent_beck</bcf:citekey>
+    <bcf:citekey order="7">jbehave_home</bcf:citekey>
+    <bcf:citekey order="8">xunit_test_patterns</bcf:citekey>
+    <bcf:citekey order="9">surefire_home</bcf:citekey>
+    <bcf:citekey order="10">thucydides_home</bcf:citekey>
+    <bcf:citekey order="11">john_smart_home</bcf:citekey>
+    <bcf:citekey order="12">thucydides_docs</bcf:citekey>
+    <bcf:citekey order="13">allure_home</bcf:citekey>
+    <bcf:citekey order="14">maven_guide</bcf:citekey>
+    <bcf:citekey order="15">freemarker_home</bcf:citekey>
+    <bcf:citekey order="16">cglib_home</bcf:citekey>
+    <bcf:citekey order="17">ow2_asm_home</bcf:citekey>
+    <bcf:citekey order="18">pytest_home</bcf:citekey>
+    <bcf:citekey order="19">aspectj_cookbook</bcf:citekey>
+    <bcf:citekey order="20">angularjs_home</bcf:citekey>
+    <bcf:citekey order="21">spa</bcf:citekey>
+    <bcf:citekey order="22">qa_bicycle</bcf:citekey>
+    <bcf:citekey order="23">hello_allure</bcf:citekey>
+    <bcf:citekey order="24">step_by_step</bcf:citekey>
+    <bcf:citekey order="25">testing_enviroment</bcf:citekey>
+    <bcf:citekey order="26">selconf</bcf:citekey>
+    <bcf:citekey order="27">pycon_russia</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>
